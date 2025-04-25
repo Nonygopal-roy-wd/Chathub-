@@ -21,7 +21,8 @@
       user-select: none;
       width: 100%;
     }
-    .hdr{
+    
+    .hdr {
       position: sticky;
       top: 0;
       z-index: 9999;
@@ -30,6 +31,7 @@
       justify-content: space-between;
       padding: 10px;
     }
+    
     h2 {
       color: #fff;
       z-index: 999;
@@ -38,11 +40,13 @@
       padding: 5px;
       padding-left: 5%;
     }
-    .vdo{
+    
+    .vdo {
       text-decoration: none;
       outline: none;
       cursor: pointer;
     }
+    
     #username {
       color: #fff;
       z-index: 989;
@@ -154,7 +158,10 @@
 </head>
 
 <body oncontextmenu="return false">
- <div class="hdr"><h2>Chathub</h2><h2><a href="c.html" class="vdo">📹</a></h2></div>
+  <div class="hdr">
+    <h2>Chathub</h2>
+    <h2><a href="c.html" class="vdo">📹</a></h2>
+  </div>
   <input type="text" id="username" placeholder="Enter your name"><br>
   
   <div id="chat-box">
@@ -168,13 +175,13 @@
   <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-database-compat.js"></script>
   <script>
     const firebaseConfig = {
-  apiKey: "AIzaSyATX7EqGjollBl8oYBP_cKFLM0neqMc-68",
-  authDomain: "chathub-2-45fff.firebaseapp.com",
-  projectId: "chathub-2-45fff",
-  storageBucket: "chathub-2-45fff.firebasestorage.app",
-  messagingSenderId: "848660366215",
-  appId: "1:848660366215:web:2619b36534e7fc05a54922"
-};
+      apiKey: "AIzaSyATX7EqGjollBl8oYBP_cKFLM0neqMc-68",
+      authDomain: "chathub-2-45fff.firebaseapp.com",
+      projectId: "chathub-2-45fff",
+      storageBucket: "chathub-2-45fff.firebasestorage.app",
+      messagingSenderId: "848660366215",
+      appId: "1:848660366215:web:2619b36534e7fc05a54922"
+    };
     
     firebase.initializeApp(firebaseConfig);
     const db = firebase.database().ref("messages");
